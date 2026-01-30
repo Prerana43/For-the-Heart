@@ -32,7 +32,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-soft px-6">
+    <section className="min-h-screen flex items-center justify-center bg-soft">
       <div className="relative w-full h-[100vh] overflow-hidden shadow-xl">
         {/* Slider */}
         <div
@@ -64,11 +64,7 @@ export default function Hero() {
           <p className="max-w-xl text-white/90 mb-8">
             A crew driven by passion, rhythm and emotion.
           </p>
-          <p className="max-w-xl text-white/90 mb-8">
-            Where movement becomes emotion, and rhythm finds meaning.<br></br>
-            Every step we take is driven by feeling. Every beat we follow comes from the heart. This space is for expression beyond words — a place where stories are told through movement, connection, and shared moments.
-
-          </p>
+          
 
 
           <div className="flex gap-4">
@@ -81,8 +77,9 @@ export default function Hero() {
 
             
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/this_fortheheart"
               target="_blank"
+              rel="noopener noreferrer"
               className="border border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition"
             >
               Follow Us
