@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 
 const images = [
-  "src/images/image1.jpeg",
-  "src/images/image2.jpeg",
-  "src/images/image3.jpeg",
+  "src/assets/images/image1.jpeg",
+  "src/assets/images/image2.jpeg",
+  "src/assets/images/image3.jpeg",
 ];
 
 export default function Hero() {
