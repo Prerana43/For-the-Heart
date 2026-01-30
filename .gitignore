@@ -17,7 +17,7 @@ public/videos/*
 !public/videos/orientation1.mp4
 !public/videos/orientation2.mp4
 !public/videos/heats1.mp4
-!public/videos/alumni2.mp4
+# !public/videos/alumni2.mp4
 # !public/videos/orientation2.mp4
 
 
