@@ -14,7 +14,7 @@ dist-ssr
 public/videos/*
 !public/videos/
 !public/videos/alumni1.mp4
-!public/videos/orientation1.mp4
+
 !public/videos/orientation2.mp4
 
 
