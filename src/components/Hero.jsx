@@ -1,13 +1,12 @@
-import logo from "../assets/logo.png";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
+
 import img1 from "../assets/images/image1.jpeg";
 import img2 from "../assets/images/image2.jpeg";
 import img3 from "../assets/images/image3.jpeg";
 
 const images = [img1, img2, img3];
-
-
 
 export default function Hero() {
   const [current, setCurrent] = useState(0);
@@ -33,21 +32,25 @@ export default function Hero() {
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-soft">
-      <div className="relative w-full h-[100vh] overflow-hidden shadow-xl">
+      <div className="relative w-full h-[100svh] md:h-[100vh] overflow-hidden shadow-xl">
+
         {/* Slider */}
         <div
           className="flex h-full transition-transform duration-700 ease-in-out"
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
           {images.map((img, index) => (
-            <div key={index} className="min-w-full h-full relative">
+            <div
+              key={index}
+              className="min-w-full h-full relative bg-black"
+            >
               <img
                 src={img}
                 alt="Dance slide"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain md:object-cover"
               />
 
-              {/* Gradient */}
+              {/* Gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80"></div>
             </div>
           ))}
@@ -55,7 +58,8 @@ export default function Hero() {
 
         {/* Content */}
         <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center px-6 text-white">
-          {/* <img src={logo} alt="For The Heart" className="w-64 mb-6" /> */}
+          {/* Optional logo */}
+          {/* <img src={logo} alt="For The Heart" className="w-56 mb-6" /> */}
 
           <h1 className="font-heading text-2xl md:text-5xl mb-4">
             For the goodness. For the passion. For the heart.
@@ -64,18 +68,15 @@ export default function Hero() {
           <p className="max-w-xl text-white/90 mb-8">
             A crew driven by passion, rhythm and emotion.
           </p>
-          
 
-
-          <div className="flex gap-4">
+          <div className="flex gap-4 flex-wrap justify-center">
             <Link
-  to="/gallery#performances"
-  className="bg-brand text-white px-6 py-3 rounded-full hover:bg-accent transition"
->
-  Watch Performances
-</Link>
+              to="/gallery#performances"
+              className="bg-brand text-white px-6 py-3 rounded-full hover:bg-accent transition"
+            >
+              Watch Performances
+            </Link>
 
-            
             <a
               href="https://www.instagram.com/this_fortheheart"
               target="_blank"
