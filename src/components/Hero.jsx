@@ -1,13 +1,13 @@
 import logo from "../assets/logo.png";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import img1 from "../assets/images/image1.jpeg";
+import img2 from "../assets/images/image2.jpeg";
+import img3 from "../assets/images/image3.jpeg";
+
+const images = [img1, img2, img3];
 
 
-const images = [
-  "src/assets/images/image1.jpeg",
-  "src/assets/images/image2.jpeg",
-  "src/assets/images/image3.jpeg",
-];
 
 export default function Hero() {
   const [current, setCurrent] = useState(0);
