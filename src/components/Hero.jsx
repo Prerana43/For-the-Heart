@@ -1,5 +1,7 @@
 import logo from "../assets/logo.png";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
 
 const images = [
   "src/images/image1.jpeg",
@@ -62,14 +64,22 @@ export default function Hero() {
           <p className="max-w-xl text-white/90 mb-8">
             A crew driven by passion, rhythm and emotion.
           </p>
+          <p className="max-w-xl text-white/90 mb-8">
+            Where movement becomes emotion, and rhythm finds meaning.<br></br>
+            Every step we take is driven by feeling. Every beat we follow comes from the heart. This space is for expression beyond words — a place where stories are told through movement, connection, and shared moments.
+
+          </p>
+
 
           <div className="flex gap-4">
-            <a
-              href="#gallery"
-              className="bg-brand text-white px-6 py-3 rounded-full hover:bg-accent transition"
-            >
-              Watch Performances
-            </a>
+            <Link
+  to="/gallery#performances"
+  className="bg-brand text-white px-6 py-3 rounded-full hover:bg-accent transition"
+>
+  Watch Performances
+</Link>
+
+            
             <a
               href="https://instagram.com"
               target="_blank"
