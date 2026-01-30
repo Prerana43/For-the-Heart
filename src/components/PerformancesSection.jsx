@@ -7,7 +7,7 @@ const performanceData = {
   "Alumni Meet": ["alumni1.mp4", "alumni2.mp4", "alumni3.mp4"],
   "Orientation": ["orientation1.mp4", "orientation2.mp4"],
   "Flashmob": ["flashmob1.mp4"],
-  "Independence Day": ["alumni1.mp4"],
+  
 };
 
 export default function PerformancesSection() {
