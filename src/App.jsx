@@ -9,7 +9,7 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 
 export default function App() {
-  console.log(Blog);
+  
 
   return (
     <BrowserRouter>
