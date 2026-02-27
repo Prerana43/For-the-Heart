@@ -6,7 +6,6 @@ export default function Blog() {
       id: 1,
       title:
         "Indian Dance Forms: A Complete Guide to Classical and Folk Traditions of India",
-      // date: "February 2026",
       sections: [
         {
           heading: "Introduction",
@@ -54,12 +53,10 @@ export default function Blog() {
         },
       ],
     },
-
     {
       id: 2,
       title:
         "8 Classical Dances of India – Origin, History, and Cultural Significance",
-      // date: "March 2026",
       sections: [
         {
           heading: "Introduction",
@@ -107,12 +104,10 @@ export default function Blog() {
         },
       ],
     },
-
     {
       id: 3,
       title:
         "Indian Folk and Tribal Dance Forms of India – Traditional Indian Dances Explained",
-      // date: "April 2026",
       sections: [
         {
           heading: "Introduction",
@@ -168,34 +163,55 @@ export default function Blog() {
     },
   ];
 
+  const isBulletSection = (heading) =>
+    heading.includes("List") ||
+    heading.includes("Dances") ||
+    heading.includes("Traditions") ||
+    heading.includes("Significance") ||
+    heading.includes("Categories");
+
   return (
     <section className="py-24 px-6 bg-gray-50">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto space-y-20">
+        <h1 className="font-heading text-5xl text-brand text-center mb-16">
+  {/* Insights & Articles */}
+  Our Blogs
+</h1>
         {blogs.map((blog) => (
-          <article key={blog.id} className="mb-24">
-            <h2 className="font-heading text-4xl text-brand mb-4">
-              {blog.title}
-            </h2>
+          <article
+            key={blog.id}
+            className="bg-white rounded-2xl shadow-md p-10 border border-dark/5"
+          >
+            <h2 className="font-heading text-3xl text-brand mb-10 leading-snug flex items-start gap-4">
+  <span className="text-4xl text-brand/30 font-semibold">
+    {String(blog.id).padStart(2, "0")}
+  </span>
+  <span>{blog.title}</span>
+</h2>
 
-            <p className="text-sm text-dark/50 mb-12">{blog.date}</p>
-
-            <div className="space-y-16">
+            <div className="space-y-14">
               {blog.sections.map((section, index) => (
                 <div key={index}>
-                  <h3 className="font-heading text-xl text-brand mb-4">
+                  <h3 className="font-heading text-lg text-brand mb-4">
                     {section.heading}
                   </h3>
 
-                  <div className="space-y-6 text-dark text-lg leading-relaxed">
-                    {section.content.map((paragraph, i) => (
-                      <p key={i}>{paragraph}</p>
-                    ))}
-                  </div>
+                  {isBulletSection(section.heading) ? (
+                    <ul className="list-disc pl-6 space-y-3 text-dark text-lg leading-relaxed">
+                      {section.content.map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <div className="space-y-6 text-dark text-lg leading-relaxed">
+                      {section.content.map((paragraph, i) => (
+                        <p key={i}>{paragraph}</p>
+                      ))}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
-
-            <div className="h-px w-full bg-dark/10 mt-20"></div>
           </article>
         ))}
       </div>
