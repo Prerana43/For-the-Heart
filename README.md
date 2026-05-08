@@ -1,16 +1,79 @@
-# React + Vite
+# For The Heart ✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 🌐 Live Demo
+- Live Website: [https://for-the-heart.vercel.app]
 
-Currently, two official plugins are available:
+For The Heart is a modern React-based cultural content platform focused on Indian dance, artistic traditions, and editorial storytelling. The platform is designed to present long-form cultural content through a clean and immersive reading experience with responsive layouts and reusable frontend architecture.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Built with React, Vite, and Tailwind CSS, the project demonstrates modern frontend development practices including component-based architecture, dynamic content rendering, responsive UI design, and scalable content structuring.
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📰 Editorial-style blog interface
+- ⚡ Responsive modern UI
+- 🧩 Reusable React components
+- 📚 Dynamic article rendering
+- 🎨 Clean typography and card-based layouts
+- ☁️ Deployment using Vercel
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- Tailwind CSS
+- React Router DOM
+- JavaScript
+
+---
+
+# 🌍 Deployment
+
+- Frontend: Vercel
+- Version Control: GitHub
+
+---
+
+# ⚙️ Installation & Setup
+
+## 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/for-the-heart.git
+cd for-the-heart
+```
+
+## 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+## 3️⃣ Start Development Server
+
+```bash
+npm run dev
+```
+
+The application will start on:
+
+```bash
+http://localhost:5173
+```
+
+
+# 🚀 Future Improvements
+
+- Individual blog pages with routing
+- Featured images for articles
+- Search and category filtering
+- Markdown-based blog management
+- SEO optimization
+
+---
+
+# 👨‍💻 Author
+
+Developed by **Prerana Nisahd**
