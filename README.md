@@ -74,6 +74,3 @@ http://localhost:5173
 
 ---
 
-# 👨‍💻 Author
-
-Developed by **Prerana Nishad**
